@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [All tests]">
+  <test name="Main Yandex test(failed)">
+    <classes>
+      <class name="com.epam.tat.module4.MainTest">
+        <methods>
+          <include name="goToPage"/>
+          <include name="sendDraft"/>
+          <include name="login"/>
+          <include name="saveScreenshotAndCloseBrowser"/>
+          <include name="createDraft"/>
+        </methods>
+      </class> <!-- com.epam.tat.module4.MainTest -->
+    </classes>
+  </test> <!-- Main Yandex test(failed) -->
+</suite> <!-- Failed suite [All tests] -->

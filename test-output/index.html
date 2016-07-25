@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">2 suites, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Selenium_tests_suite">
+              <span class="suite-name border-failed">Selenium tests suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Selenium_tests_suite">
+                    <span>D:\soft\workspace\TA_Mentoring_M4_W1\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Selenium_tests_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Selenium_tests_suite">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Selenium_tests_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Selenium_tests_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Selenium_tests_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Selenium_tests_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Selenium_tests_suite" class="hide-methods failed suite-Selenium_tests_suite"> (hide)</a> <!-- hide-methods failed suite-Selenium_tests_suite -->
+                      <a href="#" panel-name="suite-Selenium_tests_suite" class="show-methods failed suite-Selenium_tests_suite"> (show)</a> <!-- show-methods failed suite-Selenium_tests_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Selenium_tests_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_tests_suite" title="com.epam.tat.selenium.tests.MailTest" hash-for-method="checkDraftContentTest">checkDraftContentTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Selenium_tests_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Selenium_tests_suite" class="hide-methods passed suite-Selenium_tests_suite"> (hide)</a> <!-- hide-methods passed suite-Selenium_tests_suite -->
+                      <a href="#" panel-name="suite-Selenium_tests_suite" class="show-methods passed suite-Selenium_tests_suite"> (show)</a> <!-- show-methods passed suite-Selenium_tests_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Selenium_tests_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_tests_suite" title="com.epam.tat.selenium.tests.MailTest" hash-for-method="checkDraftExists">checkDraftExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_tests_suite" title="com.epam.tat.selenium.tests.MailTest" hash-for-method="checkEmailNotAtDrafts">checkEmailNotAtDrafts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_tests_suite" title="com.epam.tat.selenium.tests.MailTest" hash-for-method="checkThatEmailWasSend">checkThatEmailWasSend</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_tests_suite" title="com.epam.tat.selenium.tests.MailTest" hash-for-method="composeMailTest">composeMailTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_tests_suite" title="com.epam.tat.selenium.tests.MailTest" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_tests_suite" title="com.epam.tat.selenium.tests.MailTest" hash-for-method="saveMail">saveMail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_tests_suite" title="com.epam.tat.selenium.tests.MailTest" hash-for-method="sendEmail">sendEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Selenium_tests_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TmpSuite" class="panel TmpSuite">
+        </div> <!-- panel TmpSuite -->
+        <div panel-name="suite-Selenium_tests_suite" class="panel Selenium_tests_suite">
+          <div class="suite-Selenium_tests_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.epam.tat.selenium.tests.MailTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkDraftContentTest">
+                  </a> <!-- checkDraftContentTest -->
+                  <span class="method-name">checkDraftContentTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: Not all elements were found successfully. expected [true] but found [false]
+	at com.epam.tat.selenium.tests.MailTest.checkDraftContentTest(MailTest.java:52)
+	at com.epam.tat.selenium.runner.TestRunner.main(TestRunner.java:30)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(open previously saved mail and check if content was saved properly)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Selenium_tests_suite-class-failed -->
+          <div class="suite-Selenium_tests_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.epam.tat.selenium.tests.MailTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkDraftExists">
+                  </a> <!-- checkDraftExists -->
+                  <span class="method-name">checkDraftExists</span>
+                  <em>
+(go to draft folder and check that email presents there)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkEmailNotAtDrafts">
+                  </a> <!-- checkEmailNotAtDrafts -->
+                  <span class="method-name">checkEmailNotAtDrafts</span>
+                  <em>
+(go to "sent" folder and check if message presents there)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThatEmailWasSend">
+                  </a> <!-- checkThatEmailWasSend -->
+                  <span class="method-name">checkThatEmailWasSend</span>
+                  <em>
+(go to draft and make sure that email no longer presents at this folder)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="composeMailTest">
+                  </a> <!-- composeMailTest -->
+                  <span class="method-name">composeMailTest</span>
+                  <em>
+(compose email to be send to user2, subject and text fields should be generated automaticly)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                  <em>
+(input login, password, press login button, check that login was successful)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="saveMail">
+                  </a> <!-- saveMail -->
+                  <span class="method-name">saveMail</span>
+                  <em>
+(after composing email press "save mail" button)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendEmail">
+                  </a> <!-- sendEmail -->
+                  <span class="method-name">sendEmail</span>
+                  <em>
+(press "send" button to send the mail)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Selenium_tests_suite-class-passed -->
+        </div> <!-- panel Selenium_tests_suite -->
+        <div panel-name="test-xml-TmpSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;TmpSuite&quot;&gt;
+  &lt;suite-files&gt;
+    &lt;suite-file path=&quot;testng.xml&quot;/&gt;
+  &lt;/suite-files&gt;
+&lt;/suite&gt; &lt;!-- TmpSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-Selenium_tests_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\soft\workspace\TA_Mentoring_M4_W1\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Selenium tests suite&quot;&gt;
+  &lt;test name=&quot;E-Mail testing&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;mozilla&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://mail.ru/&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.epam.tat.selenium.tests.MailTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- E-Mail testing --&gt;
+&lt;/suite&gt; &lt;!-- Selenium tests suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TmpSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TmpSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Selenium_tests_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Selenium tests suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">E-Mail testing (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TmpSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TmpSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Selenium_tests_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Selenium tests suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">login test</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">save as draft</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">saveMail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TmpSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TmpSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TmpSuite');
+function tableData_TmpSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(0);
+window.suiteTableData['TmpSuite']= { tableData: data, tableDiv: 'times-div-TmpSuite'}
+return data;
+}
+              </script>
+              <div id="times-div-TmpSuite">
+              </div> <!-- times-div-TmpSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Selenium_tests_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Selenium tests suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Selenium_tests_suite');
+function tableData_Selenium_tests_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'checkDraftContentTest')
+data.setCell(0, 2, 'com.epam.tat.selenium.tests.MailTest')
+data.setCell(0, 3, 15824);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'com.epam.tat.selenium.tests.MailTest')
+data.setCell(1, 3, 6989);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'composeMailTest')
+data.setCell(2, 2, 'com.epam.tat.selenium.tests.MailTest')
+data.setCell(2, 3, 2826);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'checkThatEmailWasSend')
+data.setCell(3, 2, 'com.epam.tat.selenium.tests.MailTest')
+data.setCell(3, 3, 2528);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'checkDraftExists')
+data.setCell(4, 2, 'com.epam.tat.selenium.tests.MailTest')
+data.setCell(4, 3, 1376);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'sendEmail')
+data.setCell(5, 2, 'com.epam.tat.selenium.tests.MailTest')
+data.setCell(5, 3, 564);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'checkEmailNotAtDrafts')
+data.setCell(6, 2, 'com.epam.tat.selenium.tests.MailTest')
+data.setCell(6, 3, 458);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'saveMail')
+data.setCell(7, 2, 'com.epam.tat.selenium.tests.MailTest')
+data.setCell(7, 3, 197);
+window.suiteTableData['Selenium_tests_suite']= { tableData: data, tableDiv: 'times-div-Selenium_tests_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <div id="times-div-Selenium_tests_suite">
+              </div> <!-- times-div-Selenium_tests_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TmpSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TmpSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Selenium_tests_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Selenium tests suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TmpSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Selenium_tests_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TmpSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Selenium_tests_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.tat.selenium.tests.MailTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initStartPage(https://mail.ru/, mozilla)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">initUsers</span>
+                <span class="method-start">10173 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">loginTest</span>
+                <span class="method-start">10177 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">composeMailTest</span>
+                <span class="method-start">17168 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">saveMail</span>
+                <span class="method-start">19995 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkDraftExists</span>
+                <span class="method-start">20193 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkDraftContentTest</span>
+                <span class="method-start">21569 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sendEmail</span>
+                <span class="method-start">37393 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkEmailNotAtDrafts</span>
+                <span class="method-start">37958 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThatEmailWasSend</span>
+                <span class="method-start">38416 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">clearEmailAndDisposeDriver</span>
+                <span class="method-start">40945 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

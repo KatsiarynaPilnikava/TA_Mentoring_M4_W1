@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Selenium tests suite]">
+  <parameter name="browser" value="mozilla"/>
+  <parameter name="url" value="https://mail.ru/"/>
+  <test name="E-Mail testing(failed)">
+    <parameter name="browser" value="mozilla"/>
+    <parameter name="url" value="https://mail.ru/"/>
+    <classes>
+      <class name="com.epam.tat.selenium.tests.MailTest">
+        <methods>
+          <include name="saveMail"/>
+          <include name="checkThatEmailWasSend"/>
+          <include name="composeMailTest"/>
+          <include name="sendEmail"/>
+          <include name="initStartPage"/>
+          <include name="initUsers"/>
+          <include name="checkEmailNotAtDrafts"/>
+          <include name="checkDraftContentTest"/>
+          <include name="clearEmailAndDisposeDriver"/>
+          <include name="loginTest"/>
+          <include name="checkDraftExists"/>
+        </methods>
+      </class> <!-- com.epam.tat.selenium.tests.MailTest -->
+    </classes>
+  </test> <!-- E-Mail testing(failed) -->
+</suite> <!-- Failed suite [Selenium tests suite] -->

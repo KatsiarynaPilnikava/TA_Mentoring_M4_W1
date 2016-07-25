@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="8" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TmpSuite" duration-ms="0" started-at="2016-07-25T11:32:52Z" finished-at="2016-07-25T11:32:52Z">
+    <groups>
+    </groups>
+  </suite> <!-- TmpSuite -->
+  <suite name="Selenium tests suite" duration-ms="49186" started-at="2016-07-25T11:32:03Z" finished-at="2016-07-25T11:32:52Z">
+    <groups>
+      <group name="login test">
+        <method signature="MailTest.loginTest()[pri:0, instance:com.epam.tat.selenium.tests.MailTest@546a03af]" name="loginTest" class="com.epam.tat.selenium.tests.MailTest"/>
+      </group> <!-- login test -->
+      <group name="save as draft">
+        <method signature="MailTest.saveMail()[pri:0, instance:com.epam.tat.selenium.tests.MailTest@546a03af]" name="saveMail" class="com.epam.tat.selenium.tests.MailTest"/>
+      </group> <!-- save as draft -->
+    </groups>
+    <test name="E-Mail testing" duration-ms="49186" started-at="2016-07-25T11:32:03Z" finished-at="2016-07-25T11:32:52Z">
+      <class name="com.epam.tat.selenium.tests.MailTest">
+        <test-method status="PASS" signature="initStartPage(java.lang.String, java.lang.String)[pri:0, instance:com.epam.tat.selenium.tests.MailTest@546a03af]" name="initStartPage" is-config="true" duration-ms="10168" started-at="2016-07-25T14:32:03Z" finished-at="2016-07-25T14:32:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://mail.ru/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mozilla]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initStartPage -->
+        <test-method status="PASS" signature="initUsers()[pri:0, instance:com.epam.tat.selenium.tests.MailTest@546a03af]" name="initUsers" is-config="true" duration-ms="1" started-at="2016-07-25T14:32:13Z" finished-at="2016-07-25T14:32:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initUsers -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.epam.tat.selenium.tests.MailTest@546a03af]" name="loginTest" duration-ms="6989" started-at="2016-07-25T14:32:13Z" description="input login, password, press login button, check that login was successful" finished-at="2016-07-25T14:32:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="composeMailTest()[pri:0, instance:com.epam.tat.selenium.tests.MailTest@546a03af]" name="composeMailTest" duration-ms="2826" depends-on-groups="login test" started-at="2016-07-25T14:32:20Z" description="compose email to be send to user2, subject and text fields should be generated automaticly" finished-at="2016-07-25T14:32:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- composeMailTest -->
+        <test-method status="PASS" signature="saveMail()[pri:0, instance:com.epam.tat.selenium.tests.MailTest@546a03af]" name="saveMail" duration-ms="197" started-at="2016-07-25T14:32:23Z" description="after composing email press &quot;save mail&quot; button" depends-on-methods="com.epam.tat.selenium.tests.MailTest.composeMailTest" finished-at="2016-07-25T14:32:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveMail -->
+        <test-method status="PASS" signature="checkDraftExists()[pri:0, instance:com.epam.tat.selenium.tests.MailTest@546a03af]" name="checkDraftExists" duration-ms="1376" started-at="2016-07-25T14:32:23Z" description="go to draft folder and check that email presents there" depends-on-methods="com.epam.tat.selenium.tests.MailTest.saveMail" finished-at="2016-07-25T14:32:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDraftExists -->
+        <test-method status="FAIL" signature="checkDraftContentTest()[pri:0, instance:com.epam.tat.selenium.tests.MailTest@546a03af]" name="checkDraftContentTest" duration-ms="15824" started-at="2016-07-25T14:32:24Z" description="open previously saved mail and check if content was saved properly" depends-on-methods="com.epam.tat.selenium.tests.MailTest.checkDraftExists" finished-at="2016-07-25T14:32:40Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Not all elements were found successfully. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Not all elements were found successfully. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.epam.tat.selenium.tests.MailTest.checkDraftContentTest(MailTest.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1211)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at com.epam.tat.selenium.runner.TestRunner.main(TestRunner.java:30)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDraftContentTest -->
+        <test-method status="PASS" signature="sendEmail()[pri:0, instance:com.epam.tat.selenium.tests.MailTest@546a03af]" name="sendEmail" duration-ms="564" started-at="2016-07-25T14:32:40Z" description="press &quot;send&quot; button to send the mail" depends-on-methods="com.epam.tat.selenium.tests.MailTest.checkDraftExists" finished-at="2016-07-25T14:32:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendEmail -->
+        <test-method status="PASS" signature="checkEmailNotAtDrafts()[pri:0, instance:com.epam.tat.selenium.tests.MailTest@546a03af]" name="checkEmailNotAtDrafts" duration-ms="458" started-at="2016-07-25T14:32:40Z" description="go to &quot;sent&quot; folder and check if message presents there" depends-on-methods="com.epam.tat.selenium.tests.MailTest.sendEmail" finished-at="2016-07-25T14:32:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkEmailNotAtDrafts -->
+        <test-method status="PASS" signature="checkThatEmailWasSend()[pri:0, instance:com.epam.tat.selenium.tests.MailTest@546a03af]" name="checkThatEmailWasSend" duration-ms="2528" started-at="2016-07-25T14:32:41Z" description="go to draft and make sure that email no longer presents at this folder" depends-on-methods="com.epam.tat.selenium.tests.MailTest.sendEmail" finished-at="2016-07-25T14:32:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThatEmailWasSend -->
+        <test-method status="PASS" signature="clearEmailAndDisposeDriver()[pri:0, instance:com.epam.tat.selenium.tests.MailTest@546a03af]" name="clearEmailAndDisposeDriver" is-config="true" duration-ms="8240" started-at="2016-07-25T14:32:43Z" finished-at="2016-07-25T14:32:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearEmailAndDisposeDriver -->
+      </class> <!-- com.epam.tat.selenium.tests.MailTest -->
+    </test> <!-- E-Mail testing -->
+  </suite> <!-- Selenium tests suite -->
+</testng-results>
